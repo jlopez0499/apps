@@ -42,7 +42,7 @@ const Sidebar = () => (
                 </a>
             </li>
             <li>
-                <a target="_blank" rel='noreferrer' href="https://github.com/jlopez0499" >
+                <a target="_blank" rel='noreferrer' href="https://www.github.com/jlopez0499" >
                     <FontAwesomeIcon icon={faGithub} color="#686868" />
                 </a>
             </li>
