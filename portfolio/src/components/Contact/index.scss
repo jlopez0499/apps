@@ -1,0 +1,111 @@
+.contact-form{
+    width: 100%;
+    margin-top: 1.5rem;
+    ul{
+        padding: 0;
+        margin: 0;
+        li{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            opacity: 0;
+            overflow: hidden;
+            display: block;
+            clear: both;
+            position: relative;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
+        }
+        li.half{
+            width: 49%;
+            margin-left: 2%;
+            float: left;
+            clear: none;
+
+            &:first-child{
+                margin-left: 0;
+
+            }
+        }
+        input[type='text'], input[type='email'] {
+            width: 100%;
+            border: 0;
+            background: #323232;
+            height: 50px;
+            font-size: 1.5rem;
+            color: #fff;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        textarea{
+            width: 100%;
+            border: 0; 
+            color: #fff;
+            background: #323232;
+            height: 3.25rem;
+            padding: 1em;  
+            box-sizing: border-box;
+            min-height: 150px;
+            font-size: 1.5em;
+        }
+        .flat-button{
+            color: #F0A500;
+            text-decoration: none;
+            font-size: 2rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid #F0A500;
+            border-radius: 0.5rem;
+            background-color: #181818;
+            letter-spacing: 4px;
+            animation: fadeIn 1.2s 2.2s backwards;
+            font-weight: 600;
+            float: right;
+
+            &:hover{
+                color:#181818;
+                border: 1px solid #F0A500;
+                transition: 0.25s ease-out;
+                background-color: #F0A500;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.info-map{
+    position: absolute;
+    background-color: #000;
+    top: 5rem;
+    right: 30%;
+    z-index: 9999;
+    width: 267px;
+    padding: 2rem;
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 300;
+    opacity: 0;
+    animation: fadeIn 1s 1.5s;
+    animation-fill-mode: forwards;
+    
+    span{
+        font-size: 1.75rem;
+        display: block;
+        padding-top: 2rem;
+        color: #F0A500;
+    }
+}
+
+.map-wrap{
+    background: rgba(2, 2, 2, 0.1);
+    float: right;
+    width: 53%;
+    height: 100%;
+}
+.leaflet-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
+}

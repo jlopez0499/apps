@@ -1,0 +1,35 @@
+.projects-page{
+    width: 100%;
+    height: 100%;
+    display: block;
+    // vertical-align: middle;
+    margin: 0 auto;
+    padding: 0;
+    // top: 5%;
+    span{
+        margin-bottom: 0;
+    }
+    h1{
+        font-size: 6rem;
+        color: #F0A500;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    div{
+        margin: 0;
+        padding: 0;
+    }
+    .grid{
+        width: 80%;
+        height: 75%;
+        margin: 0 auto;
+    }
+    .text-animate-hover{
+        &:hover{
+            color: #FFFFFF;
+            
+
+        }
+    }
+}

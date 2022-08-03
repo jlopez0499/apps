@@ -1,0 +1,16 @@
+
+html {
+  font-size: 62.5%;
+
+}
+
+body {
+  margin: 0;
+  font-family: 'Givonic', 'sans-serif';
+  color: #444;
+  background-color: #181818;
+  overflow: hidden;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
