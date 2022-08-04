@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHome, faUser, faEnvelope, faBriefcase, faListSquares} from '@fortawesome/free-solid-svg-icons'
 import {faLinkedin, faGithub, faInstagram} from '@fortawesome/free-brands-svg-icons'
 
+
 const Sidebar = () => (
     <div className="nav-bar">
         <Link className="logo" to="/">

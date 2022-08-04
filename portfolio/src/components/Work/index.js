@@ -15,6 +15,7 @@ const Work = () => {
     return(
         <>
             <div className='container work-page'>
+                <div className='text-zone'>
                 <h1>
                     <AnimatedLetters letterClass={letterClass}strArray={['R','e','s','u','m','e']} idx={15}></AnimatedLetters>
                 </h1>
@@ -41,6 +42,7 @@ const Work = () => {
                         <p class="time">March 2021 - February 2022</p>
                     </li>
                 </ul>
+                </div>
             </div>
             <Loader type='pacman' />
         </>
