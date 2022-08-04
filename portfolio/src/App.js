@@ -6,6 +6,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Work from './components/Work';
 import Projects from './components/Projects';
+import Testing from './components/Testing';
 
 function App() {
   return (

@@ -47,7 +47,7 @@ const Contact = () => {
                     strArray={['M', 'e']}
                     idx={22}/>
                 </h1>
-                <p>Feel free to reach out to me for any type of development including new projects, design inqueries, updates, maintenance, or even just to grab a cup of coffee and get to know better and learn from each other. </p>
+                <p>Feel free to reach out to me for any type of development including new projects, design inqueries, updates, maintenance, or even just to grab a cup of coffee and learn from each other. </p>
                 <div className='contact-form'>
                     <form ref={refForm} onSubmit={sendEmail}>
                         <ul>

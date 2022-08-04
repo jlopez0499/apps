@@ -1,11 +1,14 @@
 .nav-bar {
     background: #111111;
-    width: 84px;
+    width: 5rem;
     height: 100%;
     position: absolute;
     top: 0;
     z-index: 3;
     min-height: 500px;
+    @media (max-width: 480px) {
+        width: 4rem;
+      }
 
     .logo{
         display: block;
@@ -13,12 +16,14 @@
         
         img {
             display: block;
-            margin: 8px auto;
-            width: 4rem;
+            margin: 0.5rem auto;
+            width: 3rem;
             height: auto;
-            
+            @media (max-width: 480px) {
+                width: 2rem;
+              }
             &.sub-logo {
-                width: 72px;
+                width: 3rem;
             }
         }
     }
@@ -32,7 +37,7 @@
         width: 100%;
 
         a{
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             color: #686868;
             display: block;
             line-height: 51px;
@@ -40,7 +45,9 @@
             position: relative;
             text-decoration: none;
             text-align: center;
-
+            @media (max-width: 480px) {
+                font-size: 1rem;
+              }
             i {
                 transition: all 0.3s ease-out;
             }
@@ -58,8 +65,7 @@
 
             &:after{
                 content: '';
-                font-size: 1.5rem;
-                letter-spacing: 2px;
+                letter-spacing: 1px;
                 position: absolute;
                 bottom: 0;
                 display: block;
@@ -67,6 +73,10 @@
                 text-align: center;
                 opacity: 0;
                 transition: all 0.3s ease-out;
+                font-size: 1rem;
+                @media (max-width: 480px) {
+                    font-size: 0.75rem;
+                  }
             }
 
             &:first-child{
@@ -103,19 +113,20 @@
     }
     ul{
         position: absolute;
-        bottom: 2rem;
+        bottom: 1rem;
         width: 100%;
         display: block;
         padding: 0;
         list-style: none;
         text-align: center;
         margin: 0;
+        margin-bottom: 0.5rem;
 
         li{
             a{
-                padding: 1rem 0;
+                padding: 0.5rem 0;
                 display: block;
-                font-size: 2rem;
+                font-size: 1rem;
                 line-height: 1.21rem;
 
                 &:hover svg{

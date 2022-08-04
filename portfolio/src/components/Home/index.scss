@@ -1,33 +1,41 @@
 .home-page{
     .text-zone{
         position: absolute;
-        left: 10%;
+        left: 5rem;
         top: 50%;
         transform: translateY(-50%);
-        width: 60%;
+        width: 65%;
         max-height: 90%;
+        margin-left: 2rem;
+        @media (max-width: 480px) {
+            left: 4rem;
+            margin-left: 1rem;
+          }
     }
     h1{
         color: #FFFFFF;
-        font-size: 8rem;
-        margin-bottom: 1rem;
+        font-size: 5rem;
+        margin-bottom: 0;
         padding-bottom: 0;
-        img{
-            width: 40px;
-            vertical-align: top;
-        }
+        @media (max-width: 390px) {
+            font-size: 3rem;
+          }
+        @media (min-width: 391px) and (max-width: 480px) {
+            font-size: 3.5rem;
+          }
+        
     }
     h2{
-        font-size: 2rem;
-        margin-bottom: 2rem;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
         letter-spacing: 2px;
         animation: fadeIn 1s 1.8s backwards;
     }
     .flat-button{
         color: #181818;
         text-decoration: none;
-        font-size: 2rem;
-        padding: 1rem;
+        font-size: 1rem;
+        padding: 0.5rem;
         border: 1px solid #181818;
         border-radius: 0.5rem;
         background-color: #F0A500;

@@ -3,20 +3,6 @@
     height: 100%;
     position: absolute;
 }
-.top-tags{
-    bottom: auto;
-    top: 35px;
-}
-.tags{
-    color: #F0A500;
-    opacity: 0.6;
-    position: absolute;
-    bottom: 0;
-    left: 120px;
-    font-size: 2rem;
-    font-family: 'La Belle Aurore';
-
-}
 .bottom-tag-html, .top-tag-html{
     margin-left: -20px;
 }
@@ -38,23 +24,34 @@
 
     .text-zone{
         position: absolute;
-        left: 10%;
+        left: 5rem;
         top: 50%;
         transform: translateY(-50%);
         width: 35%;
         vertical-align: middle;
         display:table-cell;
         max-height: 90%;
+        margin-left: 2rem;
+
+        @media (max-width: 480px) {
+            width: 75%;
+            left: 4rem;
+            margin-left: 1rem;
+          }
         h1{
             color: #F0A500;
-            font-size: 6rem;
+            font-size: 4rem;
             margin-top: 0;
-            margin-bottom: 2rem;
+            margin-bottom: 0.5rem;
             position: relative;
             left: 10px;
+            @media (max-width: 480px) {
+                font-size: 3rem;
+              }
+            
         }
         p{
-            font-size: 1.8rem;
+            font-size: 1rem;
             color: #fafafa;
             min-width: fit-content;
             animation: pulse 1s;
