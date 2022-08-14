@@ -10,11 +10,11 @@ form.filter-options{
 
 label{
   background: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #F0A500;
   border: 1px solid #F0A500;
   font-weight: 700;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
   transition: .3s;
   cursor: pointer;
@@ -47,6 +47,10 @@ figure{
   overflow: hidden;
   margin: 0 5px;
   animation: show .8s ease;
+  @media (max-width: 480px) {
+    min-width: 225px;
+}
+  
 }
 
 @keyframes show {
@@ -60,14 +64,12 @@ figure{
     height: 250px;
     left: 0;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 1rem;
+    @media (max-width: 480px) {
+      width: 225px;
+      height: 187.5px;
   }
-}
-
-figcaption{
-  text-align: center;
-  font-size: 24px;
-  margin-top: 20px;
+  }
 }
 
 figure figcaption{
@@ -82,11 +84,15 @@ figure:hover figcaption{
 }
 
 figcaption{
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
   opacity: 0;
   transform: translateY(-200px);
   background: white;
-  border-radius: 0  0 20px 20px;
-  padding: 30px 0 20px 0;
+  border-radius: 0  0 1rem 1rem;
+  padding: 0.5rem 0;
+  padding-top: 1.5rem;
   transition: .3s;
 }
 
@@ -94,7 +100,7 @@ figcaption{
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   color: #969696;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 @keyframes transform{

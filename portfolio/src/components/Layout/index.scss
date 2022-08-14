@@ -17,8 +17,21 @@
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
 }
+.containerP{
+    will-change: contents;
+    height: 90%;
+    min-height: 566px;
+    position: absolute;
+    opacity: 0;
+    top: 5%;
+    margin: 0 auto;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+}
 .about-page, .contact-page{
-
+    overflow: auto;
     .text-zone{
         position: absolute;
         left: 5rem;
@@ -73,7 +86,7 @@
     }
 }
 .work-page{
-
+    overflow: auto;
     .text-zone{
         position: absolute;
         top: 50%;
@@ -128,6 +141,42 @@
             text-align: center;
             margin: 0;
             padding: 0;
+        }
+    }
+}
+.work-page{
+
+    .gallery{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        vertical-align: middle;
+        display:table-cell;
+        max-height: 90%;
+
+        overflow: auto;
+        h1{
+            font-size: 4rem;
+            color: #F0A500;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            @media (max-width: 480px) {
+                font-size: 3rem;
+            }
+        }
+        .grid{
+            width: 80%;
+            height: 75%;
+            margin: 0 auto;
+        }
+        .text-animate-hover{
+            &:hover{
+                color: #FFFFFF;
+                
+    
+            }
         }
     }
 }

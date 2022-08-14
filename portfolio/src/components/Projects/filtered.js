@@ -2,7 +2,7 @@ import './filtered.scss'
 import React from 'react';
 
 const imgs = [{author:"Pulp Studio", tag:"Web", src:"https://raw.githubusercontent.com/jlopez0499/imgLibrary/master/PULPSTUDIO.jpg"},
-              {author:"ELVT Studios", tag:"Mobile", src:"https://raw.githubusercontent.com/jlopez0499/imgLibrary/master/ELVT.jpg"},
+              {author:"ELVT Studios", tag:"Mobile", src:"https://raw.githubusercontent.com/jlopez0499/imgLibrary/master/ELVTSTUDIOS (2).png"},
               {author:"Virtus Active", tag:"UI/UX", src:"https://raw.githubusercontent.com/jlopez0499/imgLibrary/master/VIRTUS.jpg"},
               {author:"A Couple Scratches Away", tag:"Web", src:"https://raw.githubusercontent.com/jlopez0499/imgLibrary/master/ACSA.jpg"},
               {author:"Page 055 Los Angeles", tag:"Web", src:"https://raw.githubusercontent.com/jlopez0499/imgLibrary/master/PAGE055.jpg"},

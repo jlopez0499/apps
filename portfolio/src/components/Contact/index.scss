@@ -33,9 +33,9 @@
             border: 0;
             background: #323232;
             height: 50px;
-            font-size: 1.5rem;
+            font-size: 1rem;
             color: #fff;
-            padding: 0 20px;
+            padding: 0 1rem;
             box-sizing: border-box;
         }
         textarea{
@@ -43,16 +43,16 @@
             border: 0; 
             color: #fff;
             background: #323232;
-            height: 3.25rem;
+            height: 3rem;
             padding: 1em;  
             box-sizing: border-box;
             min-height: 150px;
-            font-size: 1.5em;
+            font-size: 1rem;
         }
         .flat-button{
             color: #F0A500;
             text-decoration: none;
-            font-size: 2rem;
+            font-size: 1rem;
             padding: 0.5rem 1rem;
             border: 1px solid #F0A500;
             border-radius: 0.5rem;
@@ -79,19 +79,22 @@
     right: 30%;
     z-index: 9999;
     width: 267px;
-    padding: 2rem;
+    padding: 1rem;
     color: #FFF;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 300;
     opacity: 0;
     animation: fadeIn 1s 1.5s;
     animation-fill-mode: forwards;
     
     span{
-        font-size: 1.75rem;
+        font-size: 1rem;
         display: block;
-        padding-top: 2rem;
+        padding-top: 1rem;
         color: #F0A500;
+    }
+    @media (max-width: 480px) {
+        display: none;
     }
 }
 
@@ -100,6 +103,9 @@
     float: right;
     width: 53%;
     height: 100%;
+    @media (max-width: 480px) {
+        display: none;
+    }
 }
 .leaflet-container{
     width: 100%;
@@ -108,4 +114,7 @@
     opacity: 0;
     animation: backInRight 1s 1.2s;
     animation-fill-mode: forwards;
+    @media (max-width: 480px) {
+        display: none;
+    }
 }

@@ -16,21 +16,18 @@ const Projects = () => {
 
     return(
         <>
-            <div className='container projects-page'>
-                <h1>
-                    <AnimatedLetters 
-                    letterClass={letterClass}
-                    strArray={['P', 'r', 'o', 'j', 'e', 'c', 't', 's']}
-                    idx={15}/>&nbsp;
-                    <AnimatedLetters 
-                    letterClass={letterClass}
-                    strArray={['A', 'r', 'c', 'h', 'i', 'v', 'e']}
-                    idx={23}/>
-                </h1>
-                <div className='grid'>
-                <Filtered />
+            <div className='containerP projects-page'>
+                <div className='gallery'>
+                    <h1>
+                        <AnimatedLetters 
+                        letterClass={letterClass}
+                        strArray={['P', 'r', 'o', 'j', 'e', 'c', 't', 's']}
+                        idx={15}/>
+                    </h1>
+                    <div className='grid'>
+                    <Filtered />
+                    </div>
                 </div>
-                
             </div>
             <Loader type='pacman' />
         </>
